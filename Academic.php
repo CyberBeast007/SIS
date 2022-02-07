@@ -41,7 +41,7 @@ while($row=mysqli_fetch_array($query))
       <div class="panel">
           <div class="user-heading round">
               <a href="#">
-                  <img src="images/students/Rahul.jpg" alt="">
+                  <img src="Admin/StudentImages/<?php echo $row['StudentRollNo'];?>/<?php echo $row['StudentImage'];?>" alt="">
               </a>
               <h1><?php echo $row['StudentName'];?></h1>
               <p><?php echo $row['StudentEmail'];?></p>
