@@ -44,7 +44,19 @@ $sql=mysqli_query($conn,"INSERT INTO studentsinfo_tbl (StudentName,StudentNameLa
 
 echo "<script>alert('Student Added');</script>";
 
-header('location:SubjectSelection.php?Rollno=".$StudentRollNo."&Email=".$StudentEmail."&Year=".$StudentAcademicYear');
+$to = $StudentEmail;
+         $subject = "Welcome To SIS Portal";
+         
+         $message = "<h1>Your Login Credential</h1>";
+         $message .= "<h2>Username :- $StudentEmail </h2>";
+         $message .= "<h2>Password :- $StudentPassword </h2>";
+         $header = "From:admin@sisportalsupport.com \r\n";
+         $header .= "MIME-Version: 1.0\r\n";
+         $header .= "Content-type: text/html\r\n";
+         
+         $retval = mail ($to,$subject,$message,$header);
+
+header("location:SubjectSelection.php?Rollno=".$StudentRollNo."&Email=".$StudentEmail."&Year=".$StudentAcademicYear);
 
 }
 
