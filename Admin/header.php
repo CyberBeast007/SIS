@@ -5,7 +5,7 @@
 					<i class="icon-reorder shaded"></i>
 				</a>
 
-			  	<a class="brand" href="index.html">
+			  	<a class="brand" href="dashboard.php">
 			  		Student Information System | Admin
 			  	</a>
 
@@ -20,8 +20,8 @@
 								<b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu">
-								<li><a href="change-password.php">Change Password</a></li>
-								<li class="divider"></li>
+								
+								
 								<li><a href="logout.php">Logout</a></li>
 							</ul>
 						</li>

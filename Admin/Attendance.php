@@ -179,12 +179,6 @@ function getSubcat(val) {
 }
 
 
-
-
-
-
-
-
 </script>
 
 <script>
